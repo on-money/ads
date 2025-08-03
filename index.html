@@ -141,6 +141,63 @@
       display: none;
     }
   </style>
+    <style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #e3f2fd, #ffffff);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .container {
+    background: #fff;
+    padding: 2em;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    max-width: 360px;
+    width: 100%;
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 1.2em;
+    color: #333;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: #1976d2;
+    color: white;
+    padding: 0.8em 1.5em;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #1565c0;
+  }
+
+  .hidden {
+    display: none;
+  }
+</style>
+
 </head>
 <body>
 
@@ -159,82 +216,39 @@
     <a class="share-link" href="mailto:?subject=Check%20out%20Kira&body=https://your-kira-site.com" target="_blank">Email</a>
     <button class="close-btn" onclick="toggleSharePopup()">Close</button>
   </div>
-   <h1 class="page-title">Top websites that provide real money</h1>
+   <h1 class="page-title">DOWNLOAD YOUTUBE VIDEO</h1>
 
- 
+ <body>
+  <div class="container">
+    <h2>Paste YouTube URL</h2>
+    <input type="text" id="yt-url" placeholder="e.g. https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
+    <a id="continue-btn" class="hidden" target="_blank">
+      <button>Continue to yt1z</button>
+    </a>
+  </div>
+
+  <script>
+    const input = document.getElementById('yt-url');
+    const continueBtn = document.getElementById('continue-btn');
+
+    input.addEventListener('input', () => {
+      const url = input.value.trim();
+      const match = url.match(/(?:v=|\/embed\/|\/watch\?v=|youtu\.be\/)([A-Za-z0-9_-]{11})/);
+
+      if (match) {
+        const videoId = match[1];
+        continueBtn.href = `https://yt1z.net/en-XD5/?id=${videoId}`;
+        continueBtn.classList.remove('hidden');
+      } else {
+        continueBtn.classList.add('hidden');
+      }
+    });
+  </script>
+</body>
+
   <div class="container">
 
-    <!-- Example Website Box -->
-   
-<div class="box">
-  <img src="https://www.earnologist.com/wp-content/uploads/2023/01/Freecash-com-logo.png">
-  <div class="name">Freecash</div>
-  <button onclick="openDetails(
-    'Freecash is a GPT (Get Paid To) platform where users earn money through surveys, app testing, gaming, and offers. Users accumulate coins that can be redeemed for PayPal cash, gift cards, or crypto. It boasts quick payouts and global availability.',
-    'https://www.youtube.com/embed/1aBMy8nZRCs',
-    'https://freecash.com/r/GH8QB'
-  )">Go To Website</button>
-</div>
 
-<!-- Honeygain -->
-<div class="box">
-  <img src="https://i2.wp.com/www.theastuteparent.com/wp-content/uploads/2021/04/start-4.png?resize=800%2C445&ssl=1">
-  <div class="name">Honeygain</div>
-  <button onclick="openDetails(
-    'Honeygain is a passive income app that pays users for sharing unused internet bandwidth. Businesses use this data for market research and SEO. It runs silently in the background and rewards you effortlessly.',
-    'https://www.youtube.com/embed/3hU8EPaD6gY',
-    'https://r.honeygain.me/ISHIM9E45'
-  )">Go To Website</button>
-</div>
-
-<!-- AdKps -->
-<div class="box">
-  <img src="https://adkps.me/wp-content/uploads/2022/10/adkeeps-meta-ec29e711.png">
-  <div class="name">AdKps</div>
-  <button onclick="openDetails(
-    'AdKps is an advertising reward platform. Users earn by clicking sponsored links and viewing promotional material. Payouts are fast and there is a referral system. It’s ideal for those who enjoy ad-based earning.',
-    'https://www.youtube.com/embed/qxN9zT8EZsg',
-    'https://adkps.me/start/?ref=172936'
-  )">Go To Website</button>
-</div>
-
-<!-- Surveoo (example 4) -->
-<div class="box">
-  <img src="https://play-lh.googleusercontent.com/qSFw4FJ17V38CKaFL2Mx7ClA84beZRRjD3Vwp-x_Vctv1j0tQUwx02VQEkNRIiYSkYI">
-  <div class="name">Surveoo</div>
-  <button onclick="openDetails(
-    'Surveoo lets users earn rewards for participating in paid surveys. It features localized survey options and offers flexible daily payouts. Especially popular in Europe and Africa.',
-    'https://www.youtube.com/embed/hbZd3RdEDos',
-    'https://www.surveoo.com/en/?r=2069412'
-  )">Go To Website</button>
-</div>
-
-<!-- ViewGrip (example 5) -->
-<div class="box">
-  <img src="https://play-lh.googleusercontent.com/l2xImKKicB4PJf8tAiQg4_j4S_gS3MaU_Uq0uEdZB6zoEpRO0FRIB4AM5Ynrpz9yug">
-  <div class="name">ViewGrip</div>
-  <button onclick="openDetails(
-    'ViewGrip is a traffic exchange platform where users get paid for watching videos and interacting with content. Ideal for creators and marketers looking to promote media in exchange for watch-time.',
-    'https://www.youtube.com/embed/cKPqIB09kMw',
-    'https://www.viewgrip.net/reff/BNG088'
-  )">Go To Website</button>
-</div>
-
- <div class="box">
-      <img src="https://fiverr-res.cloudinary.com/npm-assets/layout-service/fiverr-og-logo.5fd6463.png" alt="FreeMoney">
-      <div class="name">Fiverr</div>
-      <button onclick="openDetails('FreeMoney lets you earn rewards by completing tasks and offers.', 'https://www.youtube.com/embed/1aBMy8nZRCs', 'https://www.fiverr.com/pe/R7DrWAR')">Go To Website</button>
-    </div>
-    <!-- Freecash -->
-  </div>
-
-  <!-- Details Popup Template -->
-  <div class="popup" id="detailsPopup">
-    <div id="detailsText"></div>
-    <iframe id="detailsVideo" allowfullscreen></iframe>
-    <a id="detailsLink" class="launch-link" target="_blank">Launch Website</a>
-    <button class="close-btn" onclick="closeDetails()">Close</button>
-  </div>
 
   <script>
     function toggleSharePopup() {
